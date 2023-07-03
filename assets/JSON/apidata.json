@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "tipo": "Tucumanas",
+        "precio": 1500,
+        "img": "../img/empanadas-tucumanas.jpg"
+    },
+    {
+        "id": 2,
+        "tipo": "Salteñas",
+        "precio": 1500,
+        "img": "../img/empanadas-saltenias.webp"
+    },
+    {
+        "id": 3,
+        "tipo": "Jujeñas",
+        "precio": 1500,
+        "img": "../img/empanadas-jujenias.webp"
+    },
+    {
+        "id": 4,
+        "tipo": "Riojanas",
+        "precio": 1500,
+        "img": "../img/empanadas-riojanas.jpg"
+    },
+    {
+        "id": 5,
+        "tipo": "Sanjuaninas",
+        "precio": 1500,
+        "img": "../img/empanadas-sanjuaninas.jpg"
+    },
+    {
+        "id": 6,
+        "tipo": "Santiagueñas",
+        "precio": 1500,
+        "img": "../img/empanadas-santiaguenias.jpg"
+    },
+    {
+        "id": 7,
+        "tipo": "Litoraleñas",
+        "precio": 1500,
+        "img": "../img/empanadas-litoralenia.jpeg"
+    },
+    {
+        "id": 8,
+        "tipo": "Mendocinas",
+        "precio": 1500,
+        "img": "../img/empanadas-mendocinas.jpg"
+    },
+    {
+        "id": 9,
+        "tipo": "Patagonicas",
+        "precio": 1500,
+        "img": "../img/empanadas-patagonicas.jpg"
+    }
+]

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estiloform.css">
+    <title>Contacto</title>
+</head>
+<body>
+  <div>
+    <a href="../../index.html"><img width="80px" height="30px" src="../media/izquierda flecha.png" alt="flecha volver"></a>
+  </div>
+
+  <main>  
+    <form  
+      action="https://sheetdb.io/api/v1/armuuoaqvr6wg"
+      method="POST"
+      name="FormPedidosDb"
+      class="formulario" 
+      id="formulario"
+    > 
+        <h3>Enviar Pedido</h3>
+
+        <!--                           INPUTS                            -->
+        <div class="inputs-datos">
+          <label for="nombre">Nombre (completo):</label>
+            <i class="fas fa-times-circle form-icono" ></i>            
+            <input type="text" name="nombre" id="nombre" class="form-input">
+            <p class="form-error">Ingrese su nombre, no puede contener números, ni caracteres especiales</p>          
+        </div>
+        
+        <div class="inputs-datos">
+          <label for="direccion">Dirección:</label>
+          <i class="fas fa-times-circle form-icono" ></i>
+          <input type="text" name="direccion" id="direccion" class="form-input">
+          <p class="form-error">Ingrese su dirección, no puede contener caracteres especiales</p>
+        </div>
+
+
+        <div class="inputs-datos">
+          <label for="telefono">Teléfono:</label>
+          <i class="fas fa-times-circle form-icono" ></i>
+          <input type="text" name="telefono" id="telefono" class="form-input">
+          <p class="form-error">Ingrese su número de teléfono, no puede contener letras, caracteres especiales</p>
+        </div>
+
+
+        <div class="inputs-datos">
+          <label for="email">E-mail:</label>
+          <i class="fas fa-times-circle form-icono" ></i>
+          <input type="email" name="email" id="email" class="form-input">
+          <p class="form-error">La dirección de correo no corresponde a un formato válido</p>
+        </div>
+
+
+        <!--                          CHECKBOX                           -->
+        <fieldset>
+          <legend>Selecciona Medio de Pago:</legend>
+          <div>
+            <input type="radio" id="efectivo" name="pago" value="efectivo"
+                  checked>
+            <label for="efectivo">Efectivo</label>
+          </div>
+      
+          <div>
+            <input type="radio" id="merPago" name="pago" value="merPago">
+            <label for="merPago">Mercado Pago</label>
+          </div>        
+        </fieldset> 
+        
+        <!--                           TEXTAREA                         -->
+        <div class="inputs-datos">
+          <label for="pedido">Haga su pedido aquí:</label>
+          
+          <i class="fas fa-times-circle form-icono" ></i>
+          <textarea name="pedido" id="pedido" cols="50" rows="5"></textarea>
+          <p class="form-error">Realice el pedido, no puede contener caracteres especiales</p>
+        </div>
+
+        <!--                  MENSAJE DE ERROR              -->
+        <div class="mensaje-error">
+          <p><i class="fas fa-times-circle"></i>  Por favor, rellene todos los campos</p>
+        </div>
+
+        <!--                         BOTON ENVIAR                       -->
+        <div class="form-enviar">
+          <button type="submit" class="enviarBtn" value="enviar">Enviar</button>
+          <p class="mensaje-envio" id="mensaje-envio">Hemos recibido su pedido!</p>
+          <br>
+          <button class="enviarBtn" type="reset">Resetear</button>
+        </div>
+
+        <br>
+        <div id="ErrorApi"></div>
+
+    </form>
+
+  </main>  
+
+  <script src="../JS/compForm.js"></script>
+  <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

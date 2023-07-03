@@ -1,0 +1,211 @@
+*{ margin: 0; padding: 0; box-sizing: border-box;}
+:root {
+  --logo:#FFDCB6;
+  --menu: #434443;
+  --green: #41644A;
+  --yellow: #fafc9bb4;
+  --black: #000000;
+  --footer:#F6BA6F;
+  --aside:#ECC9EE;
+  --fondo:#edebf9;
+  --blue: #1f53c5;
+  --mostaza:rgb(246,167,0);
+}
+
+body{
+  
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color:var(--yellow);
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.formulario {
+    background: var(--menu);
+    padding: 50px;
+    max-width: 650px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--mostaza);
+    font-size: 1.3rem;
+}
+.formulario>h3{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin-bottom: 15px;  
+}
+
+.inputs-datos {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+label{
+  font-size: 20px;
+  color: var(--mostaza);
+  margin-bottom: 10px;
+}
+
+input, textarea {
+  padding: 17px 14px;
+  background: #fff;
+  border: 0;
+  font-size: 15px;
+  color: #000;
+  margin-bottom: 20px;
+  border-radius: 9px;
+  width: 100%;
+}
+textarea {
+  resize: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont;
+  font-size: 15px;
+}
+.form-input:focus {
+  outline: none;
+  border: 4px solid var(--blue);
+}
+
+input[type="radio"]{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+input[type="radio"]:checked{
+  border: 2px solid blue;
+  background-color: #09b625;
+}
+:focus{
+  outline: 1px solic #1E92E9;
+}
+
+
+.form-input-error {
+  outline:#df2525;
+  border: 2px solid red;
+  box-shadow: 0 0 10px red;
+  border-radius: 5px;
+  padding: 16px 14px;
+  margin-bottom: 2px;
+  width: 100%;
+  background: #fff;
+}
+
+.form-icono {
+  position: absolute;
+  bottom: 53px;
+  right: 10px;
+  opacity: 0;
+}
+.form-error-icono {
+  position: absolute;
+  color: rgb(237, 8, 8);
+  z-index: 9;
+  top: 53px;
+  right: 10px;
+  opacity: 1;
+}
+
+/* alerta de error - se muestra el p (mensaje de error) */
+.form-error {
+  display: none;
+}
+.form-error-activo {
+  display: block;
+  padding-top: 6px;
+  font-size: 13px;
+  color: rgb(255, 255, 255);
+}
+
+/* mensaje de error de todos los campos a llenar */
+.mensaje-error {
+  display: none;
+}
+.mensaje-error-activo {
+  height: 45px;
+  line-height: 45px;
+  color: white;
+  background: rgba(243, 3, 3, 0.961);
+  font-size: 19px;
+  border-radius: 5px;
+  text-align: center;
+  display: block;
+}
+.mensaje-error-activo p {
+  margin: 0;
+}
+
+/* boton enviar y su mensaje de envio exitoso */
+.form-enviar {
+  margin-top: 20px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.enviarBtn {
+  width: 100%;
+  height: 45px;
+  border: none;
+  background-color: #121212;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 17px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+.enviarBtn:hover {
+  background-color: black;
+}
+.mensaje-envio {
+  color:#fff;
+  font-weight: bold;
+  padding-top: 15px;
+  display: none;
+}
+.mensaje-envio-activo{
+  display: block;
+}
+
+@media(max-width:768px){
+  body{
+    padding: 0 30px;
+  }
+  .formulario{
+      width: 100%;
+  }
+  form{
+      width: 100%;
+  }
+  .enviarBtn {
+    width: 100%;
+  }
+}
+@media(max-width:480px){
+  body {
+    padding: 0 12px;
+  }
+  .formulario {
+    padding: 25px;
+  }
+  .enviarBtn {
+    width: 100%;
+  }
+}
+
+/* @media(max-width:991px){
+    body{
+        padding: 30px;
+    }
+    .formulario{
+        width: 100%;
+    }
+    form{
+        width: 100%;
+    }
+} */

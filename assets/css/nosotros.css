@@ -1,0 +1,456 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+:root {
+    --logo: #FFDCB6;
+    --menu: #434443;
+    --green: #41644A;
+    --yellow: #f7f6c4ea;
+    --red: #ED2B2A;
+    --black: #000000;
+    --footer: #F6BA6F;
+    --aside: #ECC9EE;
+    --fondo: #edebf9;
+    --blue: #1f53c5;
+    --mostaza: rgb(246, 167, 0);
+    --amarillo: rgba(255, 255, 0, 0.89);
+    --colorPrimario: grey;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--fondo);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    min-height: 100vh;
+}
+
+.container {
+    height: 1000px;
+    display: grid;
+    grid-template-areas:
+        'logo    menu'
+        'banner banner'
+        'section section'
+        'footer  footer';
+    grid-template-columns: 10% auto;
+    grid-template-rows: 10% auto auto 10%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: logo;
+    background-color: white;
+}
+
+header img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    /* height: auto; */
+}
+
+nav {
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 10%;
+    background-color: var(--menu);
+    grid-area: menu;
+
+    /* modif */
+    font-weight: bold; 
+    font-size: 16px; 
+}
+
+ul li {
+    display: inline-block;
+    padding: 0px 20px;
+    font-size: 17px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--fondo);
+}
+
+a:hover {
+    color: var(--black)
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+.mapa {
+    display: flex;
+    margin-right: 15px;
+}
+
+.mapa a {
+    display: flex;
+    justify-content: center;
+    width: 15px;
+    height: 55px;
+}
+
+.mapa h3 {
+    color: var(--black);
+}
+
+.mapa h3:hover {
+    color: var(--fondo);
+}
+
+main {
+
+    grid-area: main;
+    background: var(--yellow);
+
+}
+
+section {
+    grid-area: banner;
+}
+
+footer {
+    grid-area: footer;
+    margin-top: auto;
+    background-color: #434443;
+}
+
+/*                          modficaciones                          */
+.contenedor {
+    max-width: 120rem;
+    margin: 5rem auto;
+}
+
+section {
+    width: 100%;
+    height: auto;
+}
+
+section>img {
+    width: 100%;
+}
+
+footer {
+    grid-area: footer;
+    margin-top: auto;
+    background-color: #434443;
+}
+
+
+.content {
+    /* background: rgba(255, 255, 0, 0.808); */
+    background: var(--amarillo);
+    width: 100%;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 25% 65% 10%;
+}
+
+.card {
+    text-align: center;
+    font-size: 19px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 2px;
+    width: 1000px;
+    height: 150px;
+    margin: 10px auto;
+    background-color: rgb(208, 205, 205);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 0 30px;
+}
+
+.card2 {
+    text-align: center;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 2px;
+    width: 1000px;
+    height: 150px;
+    margin: 10px auto;
+    background-color: rgb(208, 205, 205);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 0 30px;
+}
+
+.card3 {
+    text-align: center;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 1000px;
+    height: 40px;
+    margin: 10px auto;
+    background-color: rgb(208, 205, 205);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 0 30px;
+    margin-top: 50px;/* modif    */
+}
+
+.card>h2 {
+    color: rgb(15,15,15);
+}
+
+.card2>h2 {
+    color: rgb(15,15,15);
+}
+
+.card3>h2 {
+    color: rgb(15,15,15);
+
+}
+
+section .card>img {
+    float: left;
+    width: 50px;
+}
+
+section .card2>img {
+    float: left;
+    width: 50px;
+
+}
+.map_ubicacion {
+    display: flex;
+    place-content: left;
+    justify-content: space-evenly;
+    margin-top: auto;
+    margin-bottom: 50px;
+}
+
+/*++++++*/
+
+footer {
+    grid-area: footer;
+    bottom: auto;
+    margin-bottom: auto;
+}
+
+.art {
+    display: flex;
+    justify-content: space-between;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+    padding: 40px;
+    font-size: 12px;
+}
+
+h3 {
+    font-family: cursive;
+    font-style: italic;
+}
+
+ol {
+    text-align: left;
+    justify-content: left;
+    list-style-position: inside;
+    list-style-type: square;
+}
+
+.img {
+    justify-content: right;
+    width: 450px;
+    height: 200px;
+    border-radius: 30px;
+}
+
+.content {
+    background: var(--menu);
+    width: 100%;
+    height: 100px;
+
+    display: flex;    
+    /* agre */
+}
+
+.dfoot {
+    display: flex;
+    margin-top: auto;
+    margin-left: 500px; 
+    /* margin: auto; */
+    /* align-items: center; */
+}
+    
+
+.dfoot>a {
+    font-size: 2.8vh;
+    padding-left: 100px;
+}
+
+
+
+.sectionP{
+    display: flex;
+    text-align:left;
+    justify-content: left;
+    /* color:rgba(255, 255, 0, 0.89); */
+    color: whitesmoke;
+    font-family: 'Rock Salt', cursive;
+    font-size:small;
+}
+
+@media (max-width:768px) {
+    body{    
+        width: 100vw;
+    }
+    
+    header img{
+        height: 80px;
+        width: 100px;
+    }
+
+    nav{
+        height: 100px;
+        display: flex;
+        width: 100vw; 
+    }
+
+    nav ul{
+        /* padding-right: 100px; */
+        padding-left: 0;    
+    }
+
+    section{
+        width: 845px;
+    }
+
+    .card ,.card2 ,.card3{
+        width: 100vw;
+        padding: 0;
+    }
+    .dfoot {
+        display: flex;
+        margin: auto;
+        justify-content: space-evenly;
+        margin-left: 5%;
+        margin-right: 30%;
+    }
+        
+    .sectionP{
+        display: none;
+    }
+    .dfoot>a {
+        font-size: 2vh;
+        
+    }
+
+    .map_ubicacion{
+        width: 700px;
+        padding-left: 150px;
+    }
+
+ }
+
+ @media (max-width:425px) {
+    .container{
+        grid-template-areas: 
+        'logo'
+        'menu'
+        'banner'
+        'section'
+        'footer';
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+    body{
+        
+        width: 100vw;
+    }
+        
+
+
+    header img{
+        height: 80px;
+        width: 100px;
+    }
+
+
+
+
+    nav{
+        height:90px;
+        display: flex;
+        width: 100%;
+        
+        
+        
+    }
+    .mapa{
+        display: none;
+    }
+
+    nav a{
+        padding-right: 10px;
+        padding-left: 0;
+        font-size: 4vh;
+        
+
+        
+    }
+
+
+    section{
+        width: 100%;
+
+    }
+    section>img{
+        width: 100%;
+        height: 10%;
+    }
+
+    .card ,.card2 ,.card3{
+        width: 80%;
+        padding: 0;
+    
+        font-size:3.5vh;
+    }
+
+    /*.content{
+        lef
+    }*/
+    .dfoot {
+        display: flex;
+        margin: auto;
+        
+        
+    }
+        
+
+    .dfoot>a {
+        font-size: 3.5vh;
+        padding-left:25%;
+        padding-right: 25%;
+        justify-content: space-evenly;
+    }
+
+    .map_ubicacion{
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+   .sectionP{
+    display: none;
+   }
+
+    
+}
